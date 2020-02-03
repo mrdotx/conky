@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # path:       ~/projects/conky/conky.sh
-# user:       klassiker [mrdotx]
+# author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/conky
-# date:       2020-01-24T22:10:26+0100
+# date:       2020-02-03T13:08:41+0100
 
 conky_dir="conky -q -c $HOME/.config/conky"
 
