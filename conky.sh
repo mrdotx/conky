@@ -1,9 +1,9 @@
 #!/bin/sh
 
-# path:       ~/repos/conky/conky.sh
+# path:       ~/.local/share/repos/conky/conky.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/conky
-# date:       2020-03-19T15:11:06+0100
+# date:       2020-03-25T23:11:27+0100
 
 conky_dir="conky -q -c $HOME/.config/conky"
 
@@ -18,19 +18,25 @@ choice=$1
 
 case "$choice" in
 vertical)
-    [ "$(pgrep -f "$conky3")" ] \
-        && kill "$(pgrep -f "$conky3")" \
-        || $conky3
+    if [ "$(pgrep -f "$conky3")" ]; then
+        kill "$(pgrep -f "$conky3")"
+    else
+        $conky3
+    fi
     ;;
 slim-horizontal)
-    [ "$(pgrep -f "$conky2")" ] \
-        && kill "$(pgrep -f "$conky2")" \
-        || $conky2
+    if [ "$(pgrep -f "$conky2")" ]; then
+        kill "$(pgrep -f "$conky2")"
+    else
+        $conky2
+    fi
     ;;
 horizontal)
-    [ "$(pgrep -f "$conky1")" ] \
-        && kill "$(pgrep -f "$conky1")" \
-        || $conky1
+    if [ "$(pgrep -f "$conky1")" ]; then
+        kill "$(pgrep -f "$conky1")"
+    else
+        $conky1
+    fi
     ;;
 large)
     if [ "$(pgrep -f "$conky3")" ]; then
