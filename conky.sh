@@ -3,7 +3,7 @@
 # path:       /home/klassiker/.local/share/repos/conky/conky.sh
 # author:     klassiker [mrdotx]
 # github:     https://github.com/mrdotx/conky
-# date:       2020-04-29T11:08:11+0200
+# date:       2020-10-19T19:16:47+0200
 
 conky_dir="conky -q -c $HOME/.config/conky"
 
@@ -14,7 +14,8 @@ conky3="$conky_dir/klassiker_vertical.conf"
 choice=$1
 
 # if no config given use vertical
-[ -z "$1" ] && choice="vertical"
+[ -z "$1" ] \
+    && choice="vertical"
 
 case "$choice" in
 vertical)
