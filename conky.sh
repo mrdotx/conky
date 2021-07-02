@@ -3,9 +3,9 @@
 # path:   /home/klassiker/.local/share/repos/conky/conky.sh
 # author: klassiker [mrdotx]
 # github: https://github.com/mrdotx/conky
-# date:   2021-05-14T14:38:39+0200
+# date:   2021-07-02T14:06:01+0200
 
-conky_dir="conky -q -c $HOME/.config/conky"
+conky_dir="conky -q -c $HOME/.local/share/repos/conky"
 
 conky1="$conky_dir/klassiker_horizontal.conf"
 conky2="$conky_dir/klassiker_slim_horizontal.conf"
