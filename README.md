@@ -1,12 +1,13 @@
 # conky
 
-shell scripts for conky
+files for conky
 
-| name     | comment                              |
-| :------- | :----------------------------------- |
-| conky.sh | start conky or toggle configurations |
-
-config files: [dotfiles/conky](https://github.com/mrdotx/dotfiles/tree/master/.config/conky)
+| name                           | comment                              |
+| :----------------------------- | :----------------------------------- |
+| conky.sh                       | start conky or toggle configurations |
+| klassiker_horizontal.conf      | horizontal config for conky          |
+| klassiker_slim_horizontal.conf | slim horizontal config for conky     |
+| klassiker_vertical.conf        | vertical config for conky            |
 
 ![slim_horizontal](screenshot_slim_horizontal.png)
 ![horizontal](screenshot_horizontal.png)
